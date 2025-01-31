@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse4Pets</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-sora{
+        font-family: "Sora", serif;
+    }
+    </style>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            background: '#FFF9F4',
+            yellow: '#FFDC26',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sora">
+    <header class="container mx-auto">
+        <div class="navbar bg-background flex items-center justify-between">
+            <!-- Left Logo -->
+            <div class="navbar-start flex items-center">
+              <a class="btn btn-ghost text-xl flex items-center space-x-2">
+                <img src="images/logo-header.png" alt="">
+                <p class="text-2xl">Browse<span class="text-yellow">4</span>Pets</p>
+              </a>
+            </div>
+
+            <!-- Center Nav for Large Screen -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+
+            <!-- Right Buttons for Large Screen -->
+            <div class="navbar-end hidden lg:flex">
+                <button class="btn border-yellow bg-white h-5 mr-2">Login</button>
+                <button class="btn bg-yellow">Register</button>
+            </div>
+
+            <!-- Right Menu for Small Screen -->
+            <div class="navbar-end lg:hidden">
+                <button class="btn btn-square btn-ghost">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block h-5 w-5 stroke-current">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
+          </div>
+    </header>
+</body>
+</html>
